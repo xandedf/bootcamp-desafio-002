@@ -17,7 +17,8 @@ function App() {
 
     const response = await api.post('repositories', {
       title: `Novo projeto ${Date.now()}`,
-      owner: "Alexandre"
+      url: `https://github.com/xandedf/bootcamp-${Date.now()}`,
+      techs: ['React ReactJS Node.JS']
     });
 
     const project = response.data;
